@@ -43,12 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselCar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\ICar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Factories\DieselCarPartsFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselEngine.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselFuelTank.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricCar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Factories\ElectricCarPartsFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricCarBattery.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricEngine.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\ICarPartsFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\IEngine.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\IFuelContainer.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
