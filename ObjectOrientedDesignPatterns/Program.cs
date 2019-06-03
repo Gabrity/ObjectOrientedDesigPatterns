@@ -1,8 +1,8 @@
 ﻿using System;
-using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Factories;
-using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
+using ObjectOrientedDesignPatterns.Factories;
+using ObjectOrientedDesignPatterns.Interfaces;
 
-namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory
+namespace ObjectOrientedDesignPatterns
 {
     internal class Program
     {

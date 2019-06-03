@@ -1,7 +1,7 @@
 ﻿using System;
-using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
+using ObjectOrientedDesignPatterns.Interfaces;
 
-namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Classes
+namespace ObjectOrientedDesignPatterns.Classes
 {
     internal class ElectricEngine : IEngine
     {

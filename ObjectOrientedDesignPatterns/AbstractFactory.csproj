@@ -43,19 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselCar.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\ICar.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Factories\DieselCarPartsFactory.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselEngine.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\DieselFuelTank.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricCar.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Factories\ElectricCarPartsFactory.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricCarBattery.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Classes\ElectricEngine.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\ICarPartsFactory.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\IEngine.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Interfaces\IFuelContainer.cs" />
-    <Compile Include="CreationalPatterns\AbstractFactory\Program.cs" />
+    <Compile Include="Classes\DieselCar.cs" />
+    <Compile Include="Interfaces\ICar.cs" />
+    <Compile Include="Factories\DieselCarPartsFactory.cs" />
+    <Compile Include="Classes\DieselEngine.cs" />
+    <Compile Include="Classes\DieselFuelTank.cs" />
+    <Compile Include="Classes\ElectricCar.cs" />
+    <Compile Include="Factories\ElectricCarPartsFactory.cs" />
+    <Compile Include="Classes\ElectricCarBattery.cs" />
+    <Compile Include="Classes\ElectricEngine.cs" />
+    <Compile Include="Interfaces\ICarPartsFactory.cs" />
+    <Compile Include="Interfaces\IEngine.cs" />
+    <Compile Include="Interfaces\IFuelContainer.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

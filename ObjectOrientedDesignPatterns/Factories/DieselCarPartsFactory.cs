@@ -1,7 +1,7 @@
-﻿using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Classes;
-using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
+﻿using ObjectOrientedDesignPatterns.Classes;
+using ObjectOrientedDesignPatterns.Interfaces;
 
-namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Factories
+namespace ObjectOrientedDesignPatterns.Factories
 {
     class DieselCarPartsFactory : ICarPartsFactory
     {

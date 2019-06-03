@@ -1,4 +1,4 @@
-﻿namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces
+﻿namespace ObjectOrientedDesignPatterns.Interfaces
 {
     internal interface ICarPartsFactory
     {
