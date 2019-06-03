@@ -1,4 +1,4 @@
-﻿namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory
+﻿namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces
 {
     public interface IFuelContainer
     {

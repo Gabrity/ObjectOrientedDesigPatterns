@@ -1,6 +1,7 @@
 ﻿using System;
+using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
 
-namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory
+namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Classes
 {
     internal class ElectricCar : ICar
     {

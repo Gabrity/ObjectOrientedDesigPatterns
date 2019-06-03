@@ -1,17 +1,17 @@
-﻿using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Factories;
+using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
 
-namespace ObjectOrientedDesignPatterns
+namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
+            // choose the concrete factory to get the set of objects you need 
+
             ICarPartsFactory carPartsFactory = new ElectricCarPartsFactory();
+            //ICarPartsFactory carPartsFactory = new DieselCarPartsFactory();
 
             var engine = carPartsFactory.GetNewEngine();
             var fuelContainer = carPartsFactory.GetNewFuelContainer();

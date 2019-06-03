@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Classes;
+using ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Interfaces;
 
-namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory
+namespace ObjectOrientedDesignPatterns.CreationalPatterns.AbstractFactory.Factories
 {
     class ElectricCarPartsFactory : ICarPartsFactory
     {
