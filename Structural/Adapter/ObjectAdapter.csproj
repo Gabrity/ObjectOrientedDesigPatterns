@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterFactory.cs" />
+    <Compile Include="IManipulator.cs" />
+    <Compile Include="IPoint.cs" />
+    <Compile Include="IWindow.cs" />
+    <Compile Include="ITextBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="TextWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
