@@ -3,7 +3,7 @@
     // the adapter
     class TextWindow : IWindow
     {
-        // we adapt by composition
+        // The object adapter uses composition in the adapter class
         private ITextBox _textBox;
 
         public TextWindow(ITextBox textBox)
