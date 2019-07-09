@@ -4,7 +4,7 @@
     class TextWindow : IWindow
     {
         // The object adapter uses composition in the adapter class
-        private ITextBox _textBox;
+        private readonly ITextBox _textBox;
 
         public TextWindow(ITextBox textBox)
         {

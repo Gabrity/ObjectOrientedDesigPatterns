@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.String;
 
 namespace ClassAdapter
 {
@@ -7,7 +7,7 @@ namespace ClassAdapter
         public IPoint Origin { get; }
         public double Height { get; }
         public double Width { get; }
-        private string _text;
+        private readonly string _text;
 
         public TextBox(string text, IPoint origin, double height, double width)
         {
@@ -19,7 +19,7 @@ namespace ClassAdapter
 
         public bool IsEmpty()
         {
-            return _text == String.Empty;
+            return _text == Empty;
         }
     }
 }

@@ -27,7 +27,7 @@
             return AdapterFactory.GetNewManipulator(this);
         }
 
-        public new bool IsEmpty()
+        bool IWindow.IsEmpty()
         {
             return IsEmpty();
         }

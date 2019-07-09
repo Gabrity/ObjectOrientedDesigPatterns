@@ -1,4 +1,4 @@
-﻿namespace Bridge
+﻿namespace ObjectAdapter
 {
     class Program
     {
