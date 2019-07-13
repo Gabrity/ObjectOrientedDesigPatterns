@@ -2,6 +2,9 @@
 
 namespace ServiceLocator
 {
+    /*
+     * Service Locator: a dependency injection pattern. https://martinfowler.com/articles/injection.html
+     */
     class Program
     {
         static void Main(string[] args)

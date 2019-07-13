@@ -6,6 +6,9 @@ namespace Builder
 {
     class Program
     {
+        /*
+         * Builder: Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+         */
         static void Main(string[] args)
         {
             char enteredKey = GetInputFromUser();

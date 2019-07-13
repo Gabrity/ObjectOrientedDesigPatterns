@@ -6,6 +6,9 @@ namespace ObjectOrientedDesignPatterns
 {
     internal class Program
     {
+        /*
+         * Abstract Factory: Provide an interfacefor creating families of related or dependent objects without specifying their concrete classes.
+         */
         static void Main(string[] args)
         {
             // choose the concrete factory to get the set of objects you need 

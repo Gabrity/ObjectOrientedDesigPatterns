@@ -7,6 +7,8 @@ namespace Bridge
     class Program
     {
         /*
+         * Bridge: Decouple an abstraction from its implementation so that the two can vary independently.
+         *
          * The bridge design pattern is basically about using composition to define the behavior of a certain class.
          * For this a good example was created already for swaps in the builder design pattern project. This is a duplicate of this.
          */
