@@ -1,7 +1,6 @@
-﻿using ObjectAdapter;
-using static System.String;
+﻿using System;
 
-namespace ObjectAdapter
+namespace Adapter
 {
     class TextBox : ITextBox
     {
@@ -20,7 +19,7 @@ namespace ObjectAdapter
 
         public bool IsEmpty()
         {
-            return _text == Empty;
+            return _text == String.Empty;
         }
     }
 }

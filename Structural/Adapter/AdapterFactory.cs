@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ObjectAdapter
+namespace Adapter
 {
     public static class AdapterFactory
     {

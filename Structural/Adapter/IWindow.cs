@@ -1,4 +1,4 @@
-﻿namespace ObjectAdapter
+﻿namespace Adapter
 {
     // interface we adapt to
     public interface IWindow

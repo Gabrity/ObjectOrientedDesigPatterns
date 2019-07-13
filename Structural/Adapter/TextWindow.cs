@@ -1,4 +1,4 @@
-﻿namespace ObjectAdapter
+﻿namespace Adapter
 {
     // the adapter
     class TextWindow : IWindow

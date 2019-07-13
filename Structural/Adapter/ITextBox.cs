@@ -1,4 +1,4 @@
-﻿namespace ObjectAdapter
+﻿namespace Adapter
 {
     // the adaptee
     public interface ITextBox
