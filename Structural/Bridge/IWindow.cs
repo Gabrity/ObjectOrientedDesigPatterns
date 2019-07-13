@@ -1,6 +1,0 @@
-﻿namespace Bridge
-{
-    interface IWindow
-    {
-    }
-}
