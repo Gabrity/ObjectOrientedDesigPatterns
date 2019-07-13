@@ -1,4 +1,4 @@
-﻿namespace Builder
+﻿namespace Builder.Interfaces
 {
     public interface ISwapBuilder
     {

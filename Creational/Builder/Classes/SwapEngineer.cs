@@ -1,8 +1,10 @@
-﻿namespace Builder
+﻿using Builder.Interfaces;
+
+namespace Builder.Classes
 {
     public class SwapEngineer
     {
-        private ISwapBuilder _swapBuilder;
+        private readonly ISwapBuilder _swapBuilder;
 
         public SwapEngineer(ISwapBuilder swapBuilder)
         {

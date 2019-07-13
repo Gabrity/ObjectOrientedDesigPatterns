@@ -1,4 +1,6 @@
-﻿namespace Builder
+﻿using Builder.Interfaces;
+
+namespace Builder.Classes
 {
     public class SwapBuilderFixedFloat : ISwapBuilder
     {
