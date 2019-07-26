@@ -13,6 +13,9 @@ namespace Facade
     {
         static void Main(string[] args)
         {
+            var client = new Client();
+            client.Manipulate();
+            Console.ReadKey();
         }
     }
 }

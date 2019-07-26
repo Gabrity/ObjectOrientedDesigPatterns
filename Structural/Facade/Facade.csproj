@@ -43,7 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalanceValidator.cs" />
+    <Compile Include="BankAccount.cs" />
+    <Compile Include="CardReaderValidator.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="IBalanceValidator.cs" />
+    <Compile Include="IBankAccount.cs" />
+    <Compile Include="ICardReaderValidator.cs" />
+    <Compile Include="IPinCodeValidator.cs" />
+    <Compile Include="PinCodeValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
