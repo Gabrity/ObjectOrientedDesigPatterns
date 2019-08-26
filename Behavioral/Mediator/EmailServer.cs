@@ -4,6 +4,7 @@ namespace Mediator
 {
     public class EmailServer : IEmailServer
     {
+        // List<string> is a very simple representation of the emails in this storage
         private readonly IDictionary<string, IList<string>> _pendingEmails;
 
         public EmailServer()
@@ -27,7 +28,9 @@ namespace Mediator
         {
             if (_pendingEmails.ContainsKey(emailAddress))
             {
-                return _pendingEmails[emailAddress];
+                var newEmails = _pendingEmails[emailAddress];
+                _pendingEmails.Remove(emailAddress);
+                return newEmails;
             }
 
             return new List<string>();
