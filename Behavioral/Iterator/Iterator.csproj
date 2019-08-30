@@ -46,8 +46,8 @@
     <Compile Include="Band.cs" />
     <Compile Include="BandListEnumerator.cs" />
     <Compile Include="BandArrayEnumerator.cs" />
-    <Compile Include="BandListIterator.cs" />
-    <Compile Include="BandArrayIterator.cs" />
+    <Compile Include="BandListStorage.cs" />
+    <Compile Include="BandArrayStorage.cs" />
     <Compile Include="IBand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

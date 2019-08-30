@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Iterator
 {
-    public class BandListIterator : IEnumerable
+    public class BandListStorage : IEnumerable
     {
         private readonly IList<IBand> _listItems;
 
-        public BandListIterator()
+        public BandListStorage()
         {
             _listItems = new List<IBand>
             {

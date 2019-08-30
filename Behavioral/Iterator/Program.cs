@@ -14,13 +14,13 @@ namespace Iterator
     {
         static void Main(string[] args)
         {
-            var bandArray = new BandArrayIterator();
+            var bandArray = new BandArrayStorage();
             foreach (var band in bandArray)
             {
                 WriteBand(band as IBand);
             }
 
-            var bandList = new BandListIterator();
+            var bandList = new BandListStorage();
             foreach (var band in bandList)
             {
                 WriteBand(band as IBand);

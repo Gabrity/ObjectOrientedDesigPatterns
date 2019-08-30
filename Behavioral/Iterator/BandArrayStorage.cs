@@ -2,11 +2,11 @@
 
 namespace Iterator
 {
-    public class BandArrayIterator : IEnumerable
+    public class BandArrayStorage : IEnumerable
     {
         private readonly IBand[] _arrayItems;
 
-        public BandArrayIterator()
+        public BandArrayStorage()
         {
             _arrayItems = new IBand[]
             {
