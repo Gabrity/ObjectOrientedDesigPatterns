@@ -5,7 +5,7 @@ namespace Proxy
     public class GraphicalObjectProxy : IGraphicalObject
     {
         private readonly string _imageFilePath;
-        // lazy instatntiation, GrapicalObjet is thrown away after being used
+        // lazy instantiation, GraphicalObject is thrown away after being used
         private IGraphicalObject _graphicalObject;
         // width and height are data that the proxy holds as well, even if the image is unloaded
         private int? _height;
@@ -18,7 +18,7 @@ namespace Proxy
         
         public void Draw()
         {
-            InstatntiateFields();
+            InstantiateFields();
             _graphicalObject.Draw();
             // garbage collect heavy object
             _graphicalObject = null;
@@ -26,9 +26,9 @@ namespace Proxy
 
         public int ImageHeight()
         {
-            if (ReferenceEquals(_height, null))
+            if (_height is null)
             {
-                InstatntiateFields();
+                InstantiateFields();
             }
             // garbage collect heavy object
             _graphicalObject = null;
@@ -38,9 +38,9 @@ namespace Proxy
 
         public int ImageWidth()
         {
-            if (ReferenceEquals(_width, null))
+            if (_width is null)
             {
-                InstatntiateFields();
+                InstantiateFields();
             }
             // garbage collect heavy object
             _graphicalObject = null;
@@ -48,11 +48,11 @@ namespace Proxy
             return _width.Value;
         }
 
-        private void InstatntiateFields()
+        private void InstantiateFields()
         {
-            if (ReferenceEquals(_graphicalObject, null))
+            if (_graphicalObject is null)
             {
-                Console.WriteLine("Graphical object is instatntiated.");
+                Console.WriteLine("Graphical object is instantiated.");
                 _graphicalObject = new GraphicalObject(_imageFilePath);
                 _width = _graphicalObject.ImageWidth();
                 _height = _graphicalObject.ImageHeight();

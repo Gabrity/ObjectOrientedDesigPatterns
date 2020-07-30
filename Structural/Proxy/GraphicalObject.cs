@@ -14,6 +14,7 @@
 
         private IImage LoadImageFromFile(string imageFilePath)
         {
+            //pretend that we load an image
             return new Image();
         }
 
