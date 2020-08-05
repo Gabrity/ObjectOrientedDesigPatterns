@@ -12,12 +12,12 @@
             CurrentExamState = new NewExamState(attempts);
         }
 
-        public void DropExam()
+        public void ExamDropped()
         {
             CurrentExamState.ExamDropped(this);
         }
 
-        public void CompleteExam(int grade)
+        public void ExamCompleted(int grade)
         {
             CurrentExamState.ExamCompleted(this, grade);
         }

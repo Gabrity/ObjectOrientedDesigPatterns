@@ -11,22 +11,24 @@
             var exam1 = new Exam("Calculus", 5);
 
             exam1.ExamFailed();
-            exam1.CompleteExam(3);
-            exam1.CompleteExam(3);
-            exam1.CompleteExam(2);
-            exam1.CompleteExam(4);
+            exam1.ExamCompleted(3);
+            exam1.ExamCompleted(3);
+            exam1.ExamCompleted(2);
+            exam1.ExamCompleted(4); // got a better grade at attempt 5
 
             var exam2 = new Exam("Stochastic Calculus", 3);
             exam2.ExamFailed();
             exam2.ExamFailed();
-            exam2.DropExam();
+            exam2.ExamDropped(); // exam cannot be moved out of this state
+            exam2.ExamFailed();
+            exam2.ExamCompleted(5);
 
             var exam3 = new Exam("Discrete Mathematics", 2);
             exam3.ExamFailed();
+            exam3.ExamFailed(); // ran out of attempts
+            exam3.ExamCompleted(5);
             exam3.ExamFailed();
-            exam3.CompleteExam(5);
-            exam3.ExamFailed();
-            exam3.DropExam();
+            exam3.ExamDropped();
         }
     }
 }
