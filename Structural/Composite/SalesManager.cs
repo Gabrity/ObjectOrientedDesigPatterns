@@ -6,13 +6,12 @@ namespace Composite
 {
     public class SalesManager : IEmployee
     {
-        private readonly string _name;
-        private readonly double _salesMade;
+        private readonly SalesWorker _salesWorker;
         private readonly IList<IEmployee> _managedPeople;
 
         public string Name()
         {
-            return _name;
+            return _salesWorker.Name();
         }
 
         public double SalesMade()
@@ -23,13 +22,12 @@ namespace Composite
             {
                 salesFromManagedPeople += employee.SalesMade();
             }
-            return _salesMade + salesFromManagedPeople;
+            return _salesWorker.SalesMade() + salesFromManagedPeople;
         }
 
-        public SalesManager(string name, double salesMade)
+        public SalesManager(SalesWorker salesWorker)
         {
-            _name = name;
-            _salesMade = salesMade;
+            _salesWorker = salesWorker;
             _managedPeople = new List<IEmployee>();
         }
 

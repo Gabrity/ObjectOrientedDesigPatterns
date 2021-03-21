@@ -13,21 +13,24 @@ namespace Composite
     {
         static void Main(string[] args)
         {
-            var michael = new SalesManager("Michael", 2.0);
-            var jim = new SalesManager("Jim", 5.0);
+            var michaelWorker = new SalesWorker("Michael", 2.0);
+            var michaelManager = new SalesManager(michaelWorker);
+            var jimWorker = new SalesWorker("Jim", 5.0);
+            var jimManager = new SalesManager(jimWorker);
             var stanley = new SalesWorker("Stanley", 19.0);
             var ryan = new SalesWorker("Ryan", 4.0);
-            var dwight = new SalesManager("Dwight", 72.0);
+            var dwightWorker = new SalesWorker("Dwight", 72.0);
+            var dwightManager = new SalesManager(dwightWorker);
 
-            michael.Add(jim);
-            michael.Add(stanley);
+            michaelManager.Add(jimManager);
+            michaelManager.Add(stanley);
             //stanley.Add(ryan); -invalid operation
-            michael.Remove(stanley);
-            michael.Add(dwight);
-            jim.Add(stanley);
-            jim.Add(ryan);
+            michaelManager.Remove(stanley);
+            michaelManager.Add(dwightManager);
+            jimManager.Add(stanley);
+            jimManager.Add(ryan);
 
-            WriteStatistics(michael);
+            WriteStatistics(michaelManager);
             Console.ReadKey();
         }
 
