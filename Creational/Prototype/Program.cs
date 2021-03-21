@@ -13,12 +13,24 @@ namespace Prototype
     {
         static void Main(string[] args)
         {
-            IAnimal animal = new Cat("Tom");
-            //IAnimal animal = new Dog("Harry");
+            IAnimal firstDog = new Dog("Buksi", new Identifier(42));
+            IPrototype shallowCopyDog = firstDog.ShallowCopy();
+            IPrototype deepCopyDog = firstDog.DeepCopy();
+            
+            PrintAnimals(firstDog, shallowCopyDog, deepCopyDog);
 
-            IAnimal newAnimal = animal.Clone();
-            newAnimal.MakeSound();
+            firstDog.Identifier.Id = 4;
+
+            PrintAnimals(firstDog, shallowCopyDog, deepCopyDog);
+
             Console.ReadLine();
+        }
+
+        private static void PrintAnimals(IAnimal firstDog, IPrototype shallowCopy, IPrototype deepCopy)
+        {
+            Console.WriteLine(firstDog.ToString());
+            Console.WriteLine(shallowCopy.ToString());
+            Console.WriteLine(deepCopy.ToString());
         }
     }
 }

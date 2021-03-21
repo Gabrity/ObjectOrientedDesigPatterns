@@ -1,27 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Prototype
 {
     internal class Dog : IAnimal
     {
         public string Name { get; }
-        public Dog(string name)
+        public IIdentifier Identifier { get; set;  }
+
+        public Dog(string name, IIdentifier identifier)
         {
             Name = name;
+            Identifier = identifier;
         }
         
-        public IAnimal Clone()
+        public IPrototype ShallowCopy()
         {
-            return this;
+            return (IPrototype) MemberwiseClone();
         }
 
-        public void MakeSound()
+        public IPrototype DeepCopy()
         {
-            Console.WriteLine("Bark.");
+            var deepCopyDog = (IAnimal) MemberwiseClone();
+            deepCopyDog.Identifier = new Identifier(Identifier.Id);
+            return deepCopyDog;
+        }
+
+        public override string ToString()
+        {
+            return Name + ", " + Identifier.Id;
         }
     }
 }

@@ -2,9 +2,8 @@
 
 namespace Prototype
 {
-    public interface IAnimal
+    public interface IAnimal : IPrototype
     {
-        IAnimal Clone();
-        void MakeSound();
+        IIdentifier Identifier { get; set; }
     }
 }
