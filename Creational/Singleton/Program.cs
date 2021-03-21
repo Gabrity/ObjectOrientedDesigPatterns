@@ -7,6 +7,10 @@
     {
         static void Main(string[] args)
         {
+            // first with property initialization
+            SingletonClass.GetInstance();
+
+            // second with already initialized value
             SingletonClass.GetInstance();
         }
     }

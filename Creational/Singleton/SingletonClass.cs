@@ -2,7 +2,8 @@
 {
     internal class SingletonClass
     {
-        private static SingletonClass Instance;
+        private static SingletonClass _instance;
+
         private SingletonClass()
         {
         }
@@ -10,12 +11,12 @@
         public static SingletonClass GetInstance()
         {
             // lazy instantiation
-            if (Instance == null)
+            if (_instance == null)
             {
-                return new SingletonClass();
+                _instance = new SingletonClass();
             }
 
-            return Instance;
+            return _instance;
         }
     }
 }
