@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
+    /*
+     * Decorator : Attach additional responsibilities to an object dynamically. Decorators provide a flexible
+     * alternative to subclassing for extending functionality.
+     */
     class Program
     {
         static void Main(string[] args)

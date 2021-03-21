@@ -1,10 +1,10 @@
 ﻿namespace Decorator
 {
-    public class ToppingDecorator : IPizza
+    public abstract class ToppingDecorator : IPizza
     {
-        protected readonly IPizza Pizza;
+        protected IPizza Pizza { get; }
 
-        public ToppingDecorator(IPizza pizza)
+        protected ToppingDecorator(IPizza pizza)
         {
             Pizza = pizza;
         }

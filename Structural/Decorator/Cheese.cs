@@ -6,8 +6,6 @@ namespace Decorator
     {
         public Cheese(IPizza pizza) : base(pizza)
         {
-            //Console.WriteLine("Adding doguh");
-            //Console.WriteLine("Adding chesse");
         }
 
         public override string GetDescription()
