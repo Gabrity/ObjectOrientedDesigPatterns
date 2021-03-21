@@ -5,19 +5,19 @@ namespace ObjectOrientedDesignPatterns.Classes
 {
     internal class DieselCar : ICar
     {
-        private IEngine engine;
-        private IFuelContainer fuelContainer;
+        private readonly IEngine _engine;
+        private readonly IFuelContainer _fuelContainer;
 
         public DieselCar(IEngine engine, IFuelContainer fuelContainer)
         {
-            this.engine = engine;
-            this.fuelContainer = fuelContainer;
+            _engine = engine;
+            _fuelContainer = fuelContainer;
         }
 
         public void Drive()
         {
-            engine.Start();
-            fuelContainer.GetFuel();
+            _engine.Start();
+            _fuelContainer.GetFuel();
             Console.WriteLine("Diesel car started.");
         }
     }
