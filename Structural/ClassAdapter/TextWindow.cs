@@ -4,8 +4,7 @@
     class TextWindow : TextBox, IWindow
     {
         // The class adapter uses inhertance in the adapter class
-                public TextWindow(string text, IPoint origin, double height, double width) 
-            : base(text, origin, height, width)
+        public TextWindow(string text, IPoint origin, double height, double width) : base(text, origin, height, width)
         {
         }
 
